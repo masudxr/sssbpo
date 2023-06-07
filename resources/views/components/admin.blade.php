@@ -68,6 +68,7 @@
         display: table;
         clear: both;
     }
+
     .column2 {
         float: left;
         width: 50%;
@@ -100,15 +101,15 @@
     <section class="px-6 py-8">
         <nav class="md:flex md:justify-between md:items-center">
             <div>
-                <a href="/">
+                <a href="/dashboard">
                     <img src="/images/images.png" alt="SSS Logo" width="20%" height="16">
                 </a>
             </div>
 
             <div class="mt-8 md:mt-0 flex items-center">
                 @auth
-                <a href="#request" class="ml-6 text-xs font-bold uppercase">Contact Request</a>
-                <a href="#services" class="ml-6 text-xs font-bold uppercase">Team Members</a>
+                <a href="dashboard/team" class="ml-6 text-xs font-bold uppercase">Add New Member</a>
+                <a href="dashboard/index" class="ml-6 text-xs font-bold uppercase">All Members</a>
                 <!-- <a href="#about" class="ml-6 text-xs font-bold uppercase"></a> -->
                 <span class="ml-6 text-xs font-bold uppercase">{{auth()->user()->name}}</span>
                 <form method="POST" action="logout" class="text-xs fonr-semibold text-blue-500 ml-6">
@@ -116,8 +117,8 @@
                     <button type="submit">Log Out</button>
                 </form>
                 @else
-                <a href="#request" class="ml-6 text-xs font-bold uppercase">Contact Request</a>
-                <a href="#services" class="ml-6 text-xs font-bold uppercase">Team Members</a>
+                <a href="dashboard/team" class="ml-6 text-xs font-bold uppercase">Add New Member</a>
+                <a href="dashboard/index" class="ml-6 text-xs font-bold uppercase">All Members</a>
                 <!-- <a href="#about" class="ml-6 text-xs font-bold uppercase">About Us</a> -->
                 @endauth
             </div>

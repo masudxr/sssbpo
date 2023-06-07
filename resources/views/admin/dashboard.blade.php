@@ -5,6 +5,7 @@
         </h2>
         <table id="customers">
             <tr>
+                <th>User Name</th>
                 <th>Email</th>
                 <th>Subject</th>
                 <th>Message</th>
@@ -13,6 +14,7 @@
             @foreach($contacts as $contact)
 
             <tr>
+                <td> {{$contact->name}} </td>
                 <td> {{$contact->email}} </td>
                 <td>{{$contact->subject}}</td>
                 <td>{{$contact->body}}</td>

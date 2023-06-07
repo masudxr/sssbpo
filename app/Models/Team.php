@@ -5,14 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Contact extends Model
+class Team extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'name',
         'email',
-        'subject',
-        'body',
+        'title',
+        'phone',
+        'address'
     ];
 }

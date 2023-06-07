@@ -88,7 +88,41 @@
         padding: 25px;
 
     }
-
+    .boss{
+        text-align: center;
+    }
+    .boss img{
+        width: 280px;
+        height: 200px;
+        margin-left: 42%;
+    }
+    .content{
+        margin-left: 25px;
+        text-align: center;
+        margin: 15px 15px;
+    }
+    .leader
+    {
+        margin: 20px 20px;
+        margin-left: 35%;
+    }
+    .co-leader
+    {
+        margin: 20px 20px;
+        margin-left: 20%;
+    }
+    .leader img
+    {
+        width: 280px;
+        height: 200px;
+        /* margin-left: 42%; */
+    }
+    .co-leader img
+    {
+        width: 280px;
+        height: 200px;
+        /* margin-left: 42%; */
+    }
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
         .column {

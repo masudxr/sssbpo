@@ -1,7 +1,7 @@
 <!doctype html>
-
 <title>SSS</title>
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link href="resources/css/app.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@3.10.3/dist/alpine.min.js" defer></script>
@@ -56,12 +56,14 @@
     /* Create three equal columns that floats next to each other */
     .column {
         float: left;
-        width: 25%;
+        width: 24%;
         padding: 7px;
         height: 300px;
-        border: 1px solid #b7bcbd;
-        /* margin: 1px; */
-        /* Should be removed. Only for demonstration */
+        border: 1px solid #e0dfda;
+        margin: 2px 2px;
+        margin-left: 15px;
+        background-color: white;
+        border-radius: 10px;
     }
 
     .media {
@@ -69,7 +71,7 @@
         width: 33.33%;
         padding: 7px;
         height: 300px;
-        border: 1px solid #b7bcbd;
+        border: 1px solid #e0dfda;
         /* margin: 1px; */
         /* Should be removed. Only for demonstration */
     }
@@ -80,6 +82,7 @@
         display: table;
         clear: both;
     }
+
     .column2 {
         float: left;
         width: 50%;
@@ -89,15 +92,94 @@
     }
 
     .container {
-        background-image: url("/images/banner.webp");
+        background-image: url(/images/banner.webp);
         background-color: #cccccc;
         margin-bottom: 20px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        border: 1px solid black;
+        border: 1px solid #e0dfda;
         padding: 25px;
+        width: 2000px;
+        height: 386px;
+        margin-left: 168px;
+        border-radius: 10px;
+    }
 
+    .container h2 {
+        padding-top: 140px;
+        color: #e0dfda;
+    }
+
+    .gallery-one {
+        width: 436px;
+        height: auto;
+        margin: 10px 10px;
+        margin-left: 80px;
+        border: 1px solid #e0dfda;
+
+    }
+
+    .gallery-two {
+        width: 455px;
+        height: 285px;
+        margin: 10px 10px;
+        margin-left: 80px;
+        border: 1px solid #e0dfda;
+
+    }
+
+    .gallery-three {
+        width: 543px;
+        height: 286px;
+        margin: 10px 10px;
+        margin-left: 80px;
+        border: 1px solid #e0dfda;
+    }
+
+    .about {
+        text-align: center;
+        width: 1200px;
+        margin-left: 279px;
+        padding: 10px 10px;
+    }
+    .teamrow
+    {
+        border: 3px solid blue;
+    }
+
+    .team-one {
+        width: 325px;
+        height: 325px;
+        margin: 10px 20px;
+        margin-left: 120px;
+        text-align: center;
+        border: 1px solid red;
+    }
+
+    .team-two {
+        width: 325px;
+        height: 325px;
+        margin: 10px 20px;
+        margin-left: 80px;
+        text-align: center;
+        border: 1px solid red;
+
+    }
+
+    .team-three {
+        width: 325px;
+        height: 325px;
+        margin: 10px 10px;
+        margin-left: 80px;
+        border: 1px solid red;
+        text-align: center;
+
+    }
+    .morebutton
+    {
+        margin-top: 180px;
+        margin-left: 20px;
     }
 
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -126,6 +208,7 @@
                 <a href="#about" class="ml-6 text-xs font-bold uppercase">About Us</a>
                 <a href="#gallery" class="ml-6 text-xs font-bold uppercase">Gallery</a>
                 <a href="#blog" class="ml-6 text-xs font-bold uppercase">Blog</a>
+                <a href="#team" class="ml-6 text-xs font-bold uppercase">Team</a>
                 <a href="#contact" class="ml-6 text-xs font-bold uppercase">Contact Us</a>
                 <span class="ml-6 text-xs font-bold uppercase">{{auth()->user()->name}}</span>
                 <form method="POST" action="logout" class="text-xs fonr-semibold text-blue-500 ml-6">
@@ -138,6 +221,7 @@
                 <a href="#about" class="ml-6 text-xs font-bold uppercase">About Us</a>
                 <a href="#gallery" class="ml-6 text-xs font-bold uppercase">Gallery</a>
                 <a href="#blog" class="ml-6 text-xs font-bold uppercase">Blog</a>
+                <a href="#team" class="ml-6 text-xs font-bold uppercase">Team</a>
                 <a href="#contact" class="ml-6 text-xs font-bold uppercase">Contact Us</a>
                 @endauth
 
