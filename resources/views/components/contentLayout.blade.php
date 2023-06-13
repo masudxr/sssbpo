@@ -123,6 +123,30 @@
         height: 200px;
         /* margin-left: 42%; */
     }
+    .serviceCover {
+        background-image: url(/images/service.jpg);
+        margin-bottom: 73px;
+        margin-top: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: 1px solid red;
+        border-radius: 10px;
+        padding-top: 450px;
+
+    }
+
+    .design {
+        background-image: url("/images/property.jpg");
+        background-color: #cccccc;
+        margin-bottom: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1550px 650px;
+        border: 1px solid black;
+        padding: 250px;
+
+    }
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
         .column {
@@ -132,8 +156,6 @@
 </style>
 
 <body style="font-family: Open Sans, sans-serif">
-    <!-- Topbar Start -->
-    <!-- Topbar End -->
     <section class="px-6 py-8">
         <nav class="md:flex md:justify-between md:items-center">
             <div>

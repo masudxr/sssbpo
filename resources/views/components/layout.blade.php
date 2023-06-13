@@ -1,5 +1,5 @@
 <!doctype html>
-<title>SSS</title>
+<title>Alhamdulillah</title>
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <link href="resources/css/app.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -92,23 +92,22 @@
     }
 
     .container {
-        background-image: url(/images/banner.webp);
+        background-image: url(/images/cover.jpg);
         background-color: #cccccc;
         margin-bottom: 20px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        border: 1px solid #e0dfda;
-        padding: 25px;
+        /* border: 1px solid #e0dfda; */
+        padding: 250px 900px;
         width: 2000px;
         height: 386px;
-        margin-left: 168px;
         border-radius: 10px;
+        margin: 25px 10px;
     }
 
     .container h2 {
-        padding-top: 140px;
-        color: #e0dfda;
+        color: black;
     }
 
     .gallery-one {
@@ -139,12 +138,20 @@
 
     .about {
         text-align: center;
-        width: 1200px;
-        margin-left: 279px;
+        width: 1769px;
+        margin-left: 44px;
         padding: 10px 10px;
+        background-image: url(/images/contact.jpg);
+        background-color: #cccccc;
+        margin-bottom: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-right: 985px;
+        padding-top: 154px;
     }
-    .teamrow
-    {
+
+    .teamrow {
         border: 3px solid blue;
     }
 
@@ -176,11 +183,39 @@
         text-align: center;
 
     }
-    .morebutton
-    {
+
+    .morebutton {
         margin-top: 180px;
         margin-left: 20px;
     }
+
+    /* service */
+    .service {
+        background-image: url(/images/service.jpg);
+        margin-bottom: 73px;
+        margin-top: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: 1px solid red;
+        border-radius: 10px;
+
+    }
+
+    .column3 {
+        float: left;
+        width: 24%;
+        padding: 23px;
+        height: 326px;
+        margin: 2px 2px;
+        margin-left: 12px;
+        margin-top: 209px;
+        text-align: center;
+        color: aliceblue;
+        padding-top: 0px;
+    }
+
+
 
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {

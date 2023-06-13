@@ -1,54 +1,51 @@
 <x-contentLayout>
-    <section class="mt-10 mb-6">
-        <div class="container">
-            <h2>
-                Web Development !!
-            </h2>
+    <section class="mt-10 mb-2">
+        <div class="serviceCover">
+
         </div>
     </section>
     <section class="mb-6">
-        <h1>
-            Web Design Services !
-        </h1>
+        <h2>
+            What Is Web Development?
+        </h2>
+        <br />
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            Website development is definitely about building webs. Basically, it includes all activities from registering domain names, hosting servers and email hosting to storage and routing. Developers then will build security layers to protect the confidential or private information of customers and your company from cyber-theft. Also, after your idea is carefully discussed, an engineering team will draw up plans and strategy of web building and finally execute it. This is a necessary steps of creating webs.
         </p>
+        <br />
         <img src="/images/design.webp" alt="SSS Logo" width="20%" height="16">
+        <br />
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            However, some companies now extend their web development services to UI/ UX design, testing and maintenance, while any design tasks literally belong to web design, but not web development. Despite some confusion between such two terms, many of the mentioned tasks are often included in web service package when you outsource your software products.
         </p>
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            Moreover, any attractive websites now need to be optimized with search engines, provide good content and intuitive UI/UX design, or run seamlessly. Meanwhile, your idea is sometimes too complicated to turn into a real product. So to facilitate communication between stakeholders and web engineers, many firms now provide business consulting services. For example, Boldare often helps validate the business ideas of clients, set goals or identify possible challenges related to software creation; or Designveloper will give in-depth consultancy of business solutions or technical analysis to your business hypothesis. If you are still struggling with digitalizing ideas, any expert advice is more advisable.
+        </p>
+        <p>
+            Depending on your specific demands, different types of web-based solutions will be provided and based on different technologies such as static web development or PHP web development.
         </p>
     </section>
     <section class="mb-6">
         <h1>
-            Preferable Languages !
+            We are Offering 5 Types of Web Development Services !!
         </h1>
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </p>
-        <img src="/images/design.webp" alt="SSS Logo" width="20%" height="16">
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </p>
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </p>
-    </section>
-    <section class="mb-6">
-        <h1>
-            Preferable Languages !
-        </h1>
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </p>
-        <img src="/images/design.webp" alt="SSS Logo" width="20%" height="16">
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </p>
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </p>
+        <br />
+        <ul>
+            <li>
+                1. Full-stack development
+            </li>
+            <li>
+                2. E-commerce development
+            </li>
+            <li>
+                3. Customized web app development
+            </li>
+            <li>
+                4. CMS website development
+            </li>
+            <li>
+                5. PHP development
+            </li>
+        </ul>
     </section>
 </x-contentLayout>

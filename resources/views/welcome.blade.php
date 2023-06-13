@@ -1,6 +1,6 @@
 <x-layout>
-    <div id="home" class="container mt-10">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Welcome, Gamers !</h2>
+    <div id="home" class="container mt-20">
+        <h2 class="text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Welcome</h2>
     </div>
 
     <!-- Services Start -->
