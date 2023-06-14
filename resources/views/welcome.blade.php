@@ -1,7 +1,7 @@
 <x-layout>
-    <div id="home" class="container mt-20">
-        <h2 class="text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Welcome</h2>
-    </div>
+    <!-- Banner Section Start -->
+    <x-banner />
+    <!-- Banner Section End -->
 
     <!-- Services Start -->
     <x-services />
@@ -23,9 +23,9 @@
     <x-team />
     <!-- Team Members End -->
 
-
     <!-- Contact Start -->
     <x-contact />
     <!-- Contact End -->
 
 </x-layout>
+<x-foot />

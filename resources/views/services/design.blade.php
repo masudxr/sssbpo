@@ -1,12 +1,24 @@
 <x-contentLayout>
     <section class="mt-10 mb-6">
         <div class="design">
-            <h2>
-                Property Preservation Services !!
+            <h2 class="mb-3">
+                Our Services !!
             </h2>
+            <h4 class="mb-5">
+                Get The Help You Need !!
+            </h4>
+            <p>
+                Be smart when you are looking to hire a property preservation processing company. Lean on our experience as one of the top-rated outsourcing firms when it comes to helping you to update your work orders, or in helping you to manage your business.
+            </p>
         </div>
     </section>
-    <section class="mb-6">
+    <section class="mb-6 text-center">
+        <h1 class="text-center mt-6">
+            Property Preservation Updating Services
+        </h1>
+        <h3 class="text-center mb-6 mt-3">
+            Looking for someone to update & process your work orders? We have an experienced team to help you.
+        </h3>
         <h1>
             Largest Property Preservation Companies:
         </h1>

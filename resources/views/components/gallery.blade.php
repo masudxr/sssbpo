@@ -11,5 +11,10 @@
         <div class="gallery-three">
             <img src="/images/tem.webp" alt="Team Work">
         </div>
+        <Button>
+            <a href="photoGallery" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
+                See More..
+            </a>
+        </Button>
     </div>
 </section>

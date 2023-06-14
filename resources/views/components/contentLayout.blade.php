@@ -7,6 +7,10 @@
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@3.10.3/dist/alpine.min.js" defer></script>
 
 <style>
+    body {
+        margin: 15px 15px;
+    }
+
     html {
         scroll-behavior: smooth;
     }
@@ -88,41 +92,59 @@
         padding: 25px;
 
     }
-    .boss{
+
+    .boss {
         text-align: center;
+        border: #04AA6D;
     }
-    .boss img{
-        width: 280px;
-        height: 200px;
-        margin-left: 42%;
+
+    .boss img {
+        width: 250px;
+        height: 242px;
+        margin-left: 44%;
+        border-radius: 485px;
     }
-    .content{
-        margin-left: 25px;
+
+    .content {
         text-align: center;
-        margin: 15px 15px;
+        margin: 15px 31px;
     }
-    .leader
-    {
+
+    .junior {
+        text-align: center;
+        margin: 15px 31px;
+    }
+
+    .junior img {
+        width: 250px;
+        height: 242px;
+        /* margin-left: 44%; */
+        border-radius: 485px;
+    }
+
+    .leader {
         margin: 20px 20px;
-        margin-left: 35%;
+        margin-left: 27%;
     }
-    .co-leader
-    {
+
+    .co-leader {
         margin: 20px 20px;
-        margin-left: 20%;
+        margin-left: 13%;
     }
-    .leader img
-    {
-        width: 280px;
-        height: 200px;
+
+    .leader img {
+        width: 250px;
+        height: 242px;
+        border-radius: 485px;
+    }
+
+    .co-leader img {
+        width: 250px;
+        height: 242px;
         /* margin-left: 42%; */
+        border-radius: 485px;
     }
-    .co-leader img
-    {
-        width: 280px;
-        height: 200px;
-        /* margin-left: 42%; */
-    }
+
     .serviceCover {
         background-image: url(/images/service.jpg);
         margin-bottom: 73px;
@@ -137,16 +159,31 @@
     }
 
     .design {
-        background-image: url("/images/property.jpg");
-        background-color: #cccccc;
-        margin-bottom: 20px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 1550px 650px;
-        border: 1px solid black;
-        padding: 250px;
-
+        color: black;
+        font-size: x-large;
+        font-weight: bold;
+        background-color: #e1eced;
+        border-radius: 50%;
+        text-align: center;
+        padding: 99px;
     }
+    .galleryFirst
+    {
+        margin-left: 30px;
+    }
+    .photo
+    {
+        margin: 16px 25px;
+    }
+    .photo img{
+        border-radius: 10%;
+    }
+    .picBack
+    {
+        background-color: #f2f2f2;
+        border-radius: 5%;
+    }
+
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
         .column {

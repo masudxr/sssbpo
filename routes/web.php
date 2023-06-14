@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\UserController;
@@ -56,5 +57,10 @@ Route::post('register', [UserController::class, 'store']);  // post registration
 // login Page
 Route::get('login', [UserController::class, 'show']);  // get login form
 Route::post('login', [UserController::class, 'login']);  // login 
+
+Route::get('photoGallery', [PhotoController::class, 'photos']);  // get all photos
+
+
+
 
 

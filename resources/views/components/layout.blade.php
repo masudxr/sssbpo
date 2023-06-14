@@ -5,8 +5,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@3.10.3/dist/alpine.min.js" defer></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 <style>
+    body {
+        margin: 20px 20px;
+    }
+
     html {
         scroll-behavior: smooth;
     }
@@ -92,22 +97,22 @@
     }
 
     .container {
-        background-image: url(/images/cover.jpg);
-        background-color: #cccccc;
-        margin-bottom: 20px;
+        background-image: url(/banner/banner1.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        /* border: 1px solid #e0dfda; */
-        padding: 250px 900px;
-        width: 2000px;
-        height: 386px;
-        border-radius: 10px;
-        margin: 25px 10px;
+        width: 100%;
+        height: 515px;
+        padding: 62px;
+        margin-left: 231px;
     }
 
     .container h2 {
         color: black;
+    }
+
+    #gallery {
+        border: #04AA6D;
     }
 
     .gallery-one {
@@ -138,8 +143,7 @@
 
     .about {
         text-align: center;
-        width: 1769px;
-        margin-left: 44px;
+        width: 100%;
         padding: 10px 10px;
         background-image: url(/images/contact.jpg);
         background-color: #cccccc;
@@ -149,6 +153,7 @@
         background-size: cover;
         padding-right: 985px;
         padding-top: 154px;
+        border-radius: 10px;
     }
 
     .teamrow {
@@ -161,7 +166,6 @@
         margin: 10px 20px;
         margin-left: 120px;
         text-align: center;
-        border: 1px solid red;
     }
 
     .team-two {
@@ -170,8 +174,6 @@
         margin: 10px 20px;
         margin-left: 80px;
         text-align: center;
-        border: 1px solid red;
-
     }
 
     .team-three {
@@ -179,9 +181,19 @@
         height: 325px;
         margin: 10px 10px;
         margin-left: 80px;
-        border: 1px solid red;
         text-align: center;
+    }
 
+    .team-one img {
+        border-radius: 50%;
+    }
+
+    .team-two img {
+        border-radius: 50%;
+    }
+
+    .team-three img {
+        border-radius: 50%;
     }
 
     .morebutton {
@@ -197,8 +209,10 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        border: 1px solid red;
+        color: white;
         border-radius: 10px;
+        margin-right: 6px;
+        margin-left: 7px;
 
     }
 
@@ -215,6 +229,176 @@
         padding-top: 0px;
     }
 
+    /* slider banner show start */
+    .slider {
+        overflow: hidden;
+        width: 95vw;
+        height: 45vh;
+        position: relative;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .slider .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        animation: slide 10s infinite;
+    }
+
+    @keyframes slide {
+
+        0%,
+        15%,
+        100% {
+            transform: translateX(0);
+            animation-timing-function: ease;
+        }
+
+        20% {
+            transform: translateX(-100%);
+            animation-timing-function: step-end;
+        }
+
+        95% {
+            transform: translateX(100%);
+            animation-timing-function: ease;
+        }
+    }
+
+    .slider .slide:nth-child(1) {
+        background-image: url(/banner/banner.jpg);
+        animation-delay: 0;
+    }
+
+    .slider .slide:nth-child(2) {
+        background-image: url(/banner/banner1.jpg);
+        animation-delay: -12s;
+    }
+
+    .slider .slide:nth-child(3) {
+        background-image: url(/banner/banner2.jpg);
+        animation-delay: -14s;
+    }
+
+    .slider .slide:nth-child(4) {
+        background-image: url(/banner/banner3.jpg);
+        animation-delay: -16s;
+    }
+
+    .slider .slide:nth-child(5) {
+        background-image: url(/banner/banner2.jpg);
+        animation-delay: -18s;
+    }
+
+    /* slider banner show End */
+    /* footer Start */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    .fo-container {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .footer {
+        background-color: #f7f7f7;
+        padding: 70px 0;
+        margin: 0px 2px;
+        border-radius: 10px;
+        margin-top: 8px;
+    }
+
+    .footer-col {
+        width: 25%;
+        padding: 0 15px;
+    }
+
+    .footer-col h4 {
+        font-size: 18px;
+        color: black;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .footer-col ul li a:hover {
+        color: #ffffff;
+        padding-left: 8px;
+    }
+
+    .footer-col .social-links a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(174, 200, 90, 46.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: black;
+        transition: all 0.5s ease;
+    }
+
+    .footer-col .social-links a:hover {
+        color: black;
+        background-color: #ffffff;
+    }
+
+    /*responsive*/
+    @media(max-width: 767px) {
+        .footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media(max-width: 574px) {
+        .footer-col {
+            width: 100%;
+        }
+    }
+
+    /* footer end */
 
 
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -226,8 +410,6 @@
 </style>
 
 <body style="font-family: Open Sans, sans-serif">
-    <!-- Topbar Start -->
-    <!-- Topbar End -->
     <section class="px-6 py-8">
         <nav class="md:flex md:justify-between md:items-center">
             <div>
@@ -287,6 +469,49 @@
                             Subscribe
                         </button>
                     </form>
+                </div>
+            </div>
+        </footer>
+        <footer class="footer">
+            <div class="fo-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#about">about us</a></li>
+                            <li><a href="#services">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Office Address</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://bd.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
