@@ -1,12 +1,12 @@
 <section class="service">
-    <div id="services" class="mt-50 mb-30">
+    <div id="services" class="mt-50 mb-25">
         <!-- <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Our Focus</h2> -->
-        <h2 class="mt-20 text-4xl tracking-tight text-center text-gray-900 dark:text-white">Our Services</h2>
+        <h2 class="mt-35 text-4xl tracking-tight text-center text-gray-900 dark:text-white">What We Offer ?</h2>
         <p class="mt-10 text-xl tracking-tight text-center">
             We are a Business Process Outsourcing Firm that primarily provides property preservation data entry service to Preservation Companies. Additionally, we also offer services like correcting Returned orders and Vendor Management.
         </p>
         <p class="mt-8 text-xl tracking-tight text-center">
-            ​Our target is to reduce or eliminate the cost you would incur in hiring and training in-house processors and in setting up an office for them. Our specialization guarantees you to lower your costs but all the while keeping an outstanding quality with it.
+            Our target is to reduce or eliminate the cost you would incur in hiring and training in-house processors and in setting up an office for them. Our specialization guarantees you to lower your costs but all the while keeping an outstanding quality with it.
         </p>
 
 

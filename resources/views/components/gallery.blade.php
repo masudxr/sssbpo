@@ -1,5 +1,5 @@
 <section id="gallery">
-    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Gallery</h2>
+    <h2 class="mb-4 text-3xl lg:text-4xl text-center tracking-tight font-extrabold text-gray-900 dark:text-white">Gallery</h2>
 
     <div class="row flex">
         <div class="gallery-one">

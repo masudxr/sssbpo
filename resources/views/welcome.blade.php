@@ -28,4 +28,3 @@
     <!-- Contact End -->
 
 </x-layout>
-<x-foot />

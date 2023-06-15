@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [ContactController::class, 'index']);  //Show home Page
 
 Route::post('/', [ContactController::class, 'store']);  //Contact request
+// Route::post('web', [ContactController::class, 'getReq']);  //Subscribe  Request
 
 // services routes start
 Route::get('property', [ServicesController::class, 'show']);
@@ -41,6 +42,7 @@ Route::get('blog2', [BlogController::class, 'showBlog2']);
 Route::get('teams', [BlogController::class, 'team']);
 
 
+Route::get('delete', [ContactController::class, 'delete']);  //delete request
 Route::get('dashboard', [ContactController::class, 'show']);  //Admin Dashboard
 
 Route::get('dashboard/team', [TeamController::class, 'index']);  //add new members form
@@ -59,6 +61,11 @@ Route::get('login', [UserController::class, 'show']);  // get login form
 Route::post('login', [UserController::class, 'login']);  // login 
 
 Route::get('photoGallery', [PhotoController::class, 'photos']);  // get all photos
+
+Route::get('payment', [ContactController::class, 'payment']);  // get all photos
+
+
+
 
 
 

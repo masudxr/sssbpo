@@ -219,14 +219,29 @@
     .column3 {
         float: left;
         width: 24%;
-        padding: 23px;
-        height: 326px;
-        margin: 2px 2px;
+        padding: 76px;
+        height: 325px;
+        margin: 0px 6px;
         margin-left: 12px;
-        margin-top: 209px;
+        margin-top: 90px;
         text-align: center;
-        color: aliceblue;
-        padding-top: 0px;
+        color: black;
+        padding-top: 6px;
+        background-color: #dedcdc;
+    }
+
+    .column3 img {
+        border-radius: 75%;
+    }
+
+    .text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        padding: 0px 471px;
+    }
+
+    .text-4xl {
+        color: whitesmoke;
     }
 
     /* slider banner show start */
@@ -456,7 +471,8 @@
             <div class="mt-10">
                 <div class="relative inline-block mx-auto lg:bg-gray-200 rounded-full">
 
-                    <form method="POST" action="#" class="lg:flex text-sm">
+                    <form method="POST" action="/" class="lg:flex text-sm">
+                        @csrf
                         <div class="lg:py-3 lg:px-5 flex items-center">
                             <label for="email" class="hidden lg:inline-block">
                                 <img src="/images/mailbox-icon.svg" alt="mailbox letter">
@@ -491,16 +507,15 @@
                             <li><a href="#">shipping</a></li>
                             <li><a href="#">returns</a></li>
                             <li><a href="#">order status</a></li>
-                            <li><a href="#">payment options</a></li>
+                            <li><a href="payment">payment options</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
                         <h4>Office Address</h4>
                         <ul>
-                            <li><a href="#">watch</a></li>
-                            <li><a href="#">bag</a></li>
-                            <li><a href="#">shoes</a></li>
-                            <li><a href="#">dress</a></li>
+                            <li><a href="#">Kashinathpur, Pabna</a></li>
+                            <li><a href="#">Rajshahi</a></li>
+                            <li><a href="#">Bangladesh</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">

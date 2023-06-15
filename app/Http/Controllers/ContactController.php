@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Subscribe;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -34,5 +35,31 @@ class ContactController extends Controller
         return view('admin.dashboard', [
             'contacts' => Contact::all()
         ]);
+    }
+    public function Delete()
+    {
+        $list = request()->input();
+        $deleteUser = Contact::find($list['id']);
+        $deleteUser->delete();
+        return redirect('dashboard');
+    }
+    public function getReq()
+    {
+
+        $done = request()->all();
+        dd($done);
+
+        // $attribute = request()->validate([
+        //     'email' => 'required|email|max:255',
+        // ]);
+
+        // Subscribe::create($attribute);
+
+        // return redirect('/');
+    }
+
+    public function payment()
+    {
+        return view('payment');
     }
 }
