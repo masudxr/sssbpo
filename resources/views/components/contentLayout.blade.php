@@ -15,6 +15,13 @@
         scroll-behavior: smooth;
     }
 
+    .develop {
+        margin: 20px 0px;
+        background-color: #f2f2f2;
+        padding: 15px 15px;
+        border-radius: 10px;
+    }
+
     .clamp {
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -152,10 +159,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         border-radius: 10px;
         padding-top: 450px;
-
     }
 
     .design {
@@ -288,6 +294,97 @@
     }
 
     /* footer end */
+    .web {
+        background-color: #f7f7f7;
+        padding: 18px 35px;
+        height: 195px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
+    #gallery {
+        border: #04AA6D;
+        margin-left: 145px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+
+    }
+
+    .gallery-one {
+        width: 16%;
+        height: auto;
+        margin: 14px 0px;
+        margin-left: 80px;
+
+    }
+
+    .gallery-two {
+        width: 16%;
+
+        height: auto;
+        margin: 14px 0px;
+        margin-left: 80px;
+
+    }
+
+    .gallery-three {
+        width: 16%;
+
+        height: auto;
+        margin: 14px 0px;
+        margin-left: 80px;
+    }
+
+    .gallery-four {
+        width: 16%;
+
+        height: auto;
+        margin: 14px 0px;
+        margin-left: 80px;
+    }
+
+    /* Virtual Assistance Start */
+    .virtual {
+        background-image: url(/service/virtual.webp);
+        margin-bottom: 73px;
+        margin-top: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        height: 721px;
+    }
+
+    .virtual h2 {
+        font-weight: bold;
+    }
+
+    .vir-content {
+        font-weight: bold;
+        background-color: #f2f2f2;
+        padding: 18px 18px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    .vir {
+        padding-left: 85px;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+    }
+
+    .vir img {
+        width: 250px;
+        height: 242px;
+        border-radius: 10px;
+    }
+
+    .virtu {
+        text-align: center;
+        margin: 15px 31px;
+    }
+
+    /* Virtual Assistance End */
 
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
