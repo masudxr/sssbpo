@@ -1,4 +1,8 @@
 <x-contentLayout>
+    <section class="mt-10 mb-2">
+        <div class="propertyCover">
+        </div>
+    </section>
     <section class="mt-10 mb-6">
         <div class="design">
             <h2 class="mb-3">
@@ -10,7 +14,34 @@
             <p>
                 Be smart when you are looking to hire a property preservation processing company. Lean on our experience as one of the top-rated outsourcing firms when it comes to helping you to update your work orders, or in helping you to manage your business.
             </p>
+            <div class="property flex">
+                <div class="property-one">
+                    <img src="/service/p1.jpg" alt="property Preservation">
+                </div>
+                <div class="property-one">
+                    <img src="/service/p2.jpg" alt="property Preservation">
+                </div>
+                <div class="property-one">
+                    <img src="/service/p3.jpg" alt="property Preservation">
+                </div>
+                <div class="property-one">
+                    <img src="/service/p4.jpg" alt="property Preservation">
+                </div>
+                <div class="property-one">
+                    <img src="/service/p7.jpg" alt="property Preservation">
+                </div>
+                <div class="property-one">
+                    <img src="/service/p1.jpg" alt="property Preservation">
+                </div>
+                <div class="property-one">
+                    <img src="/service/p3.jpg" alt="property Preservation">
+                </div>
+                <div class="property-one">
+                    <img src="/service/p7.jpg" alt="property Preservation">
+                </div>
+            </div>
         </div>
+
     </section>
     <section class="mb-6 text-center">
         <h1 class="text-center mt-6">

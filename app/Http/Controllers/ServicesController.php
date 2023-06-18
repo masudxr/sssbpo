@@ -8,7 +8,7 @@ class ServicesController extends Controller
 {
     public function show()
     {
-        return view('services.design');
+        return view('services.property');
     }
     public function showCallService()
     {

@@ -168,10 +168,15 @@
         color: black;
         font-size: x-large;
         font-weight: bold;
-        background-color: #e1eced;
-        border-radius: 50%;
+        background-color: whitesmoke;
         text-align: center;
-        padding: 99px;
+        padding: 25px 25px;
+        border-radius: 10px;
+    }
+
+    .design h2 {
+        color: #04AA6D;
+        font-size: xx-large;
     }
 
     .galleryFirst {
@@ -385,6 +390,24 @@
     }
 
     /* Virtual Assistance End */
+
+    /* property service Start */
+    .propertyCover {
+        background-image: url(/service/property.jpg);
+        margin-bottom: 73px;
+        margin-top: 48px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        padding-top: 629px;
+    }
+
+    .property-one {
+        width: 12%;
+        height: auto;
+        margin: 19px 16px;
+    }
 
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {

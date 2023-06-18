@@ -156,6 +156,10 @@
         border-radius: 10px;
     }
 
+    .about p {
+        color: whitesmoke;
+    }
+
     .teamrow {
         border: 3px solid blue;
     }
