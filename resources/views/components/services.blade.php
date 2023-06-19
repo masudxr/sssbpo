@@ -10,13 +10,13 @@
         </p>
 
 
-        <div class="row">
+        <div class="serviceRow">
             <div class="column3 ">
                 <h2 class="mb-3">
                     Work Order Processing
                 </h2>
                 <p class="mb-6">
-                    We are one of the top-rated firms for work order processing services.Our team of property preservation processors is not only experienced with being able to process work orders for all nationals, but they are also capable of providing detailed and accurate bids and damage reports. Let us know which plan would be your preferred choice and we will be happy to assist.
+                    We are one of the top-rated firms for work order processing services.Our team of property preservation processors is not only experienced with being able to process work orders for all nationals, but they are also capable of providing detailed.
                 </p>
                 <Button>
                     <a href="property" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
@@ -29,7 +29,7 @@
                     Web Development
                 </h2>
                 <p class="mb-6">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
                 <Button>
                     <a href="web" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
@@ -42,7 +42,7 @@
                     Vendor Management
                 </h2>
                 <p class="mb-6">
-                    Hire a Virtual Assistant who helps you with office work including handling calls, emails, etc.​Our target is to reduce or eliminate the cost you would incur in hiring and training in-house processors and in setting up an office for them. Our specialization guarantees you to lower your costs but all the while keeping an outstanding quality with it.
+                    Hire a Virtual Assistant who helps you with office work including handling calls, emails, etc.​Our target is to reduce or eliminate the cost you would incur in hiring and training in-house processors and in setting up an office for them.
                 </p>
                 <Button>
                     <a href="virtual" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
@@ -56,7 +56,7 @@
                     Call Center
                 </h2>
                 <p class="mb-6">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
                 <Button>
                     <a href="call" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">

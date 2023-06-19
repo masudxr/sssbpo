@@ -10,7 +10,7 @@
         <h1 class="mb-3 text-center text-2xl">
             Our Virtual Assistant Services !!
         </h1>
-        <ul>
+        <ul class="text-left bg-gray-200 mx-12 pt-5 pb-6 pl-6 rounded-lg text-indigo-500">
             <li>
                 1.Communication
             </li>

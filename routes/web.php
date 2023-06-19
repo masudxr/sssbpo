@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\TeamController;
@@ -9,7 +10,6 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 // Routes
-
 Route::get('/', [ContactController::class, 'index']);  //Show home Page
 
 Route::post('/', [ContactController::class, 'store']);  //Contact request
@@ -54,6 +54,11 @@ Route::post('login', [UserController::class, 'login']);  // login
 Route::get('photoGallery', [PhotoController::class, 'photos']);  // get all photos
 
 Route::get('payment', [ContactController::class, 'payment']);  // get all photos
+
+Route::get('review', [Controller::class, 'review']);  // get all reviews
+
+
+
 
 
 

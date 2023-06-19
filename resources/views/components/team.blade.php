@@ -2,7 +2,7 @@
     <div class="mb-10 mt-10">
         <h2 class="mb-4 text-3xl lg:text-4xl text-center tracking-tight font-extrabold text-gray-900 dark:text-white">Team Members</h2>
 
-        <div class="row flex" style="background-color:#fcfffd;">
+        <div class="teamRow flex">
             <div class="team-one">
                 <img src="/images/shihab.png" alt="CEO">
 

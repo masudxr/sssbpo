@@ -1,7 +1,7 @@
 <!doctype html>
 <title>Alhamdulillah</title>
+<!-- <meta name="viewport" content="width=device-width, initial-seale=1.0"> -->
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-<link href="resources/css/app.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@3.10.3/dist/alpine.min.js" defer></script>
@@ -116,28 +116,24 @@
     }
 
     .gallery-one {
-        width: 436px;
+        width: 22%;
         height: auto;
         margin: 10px 10px;
-        margin-left: 80px;
         border: 1px solid #e0dfda;
-
     }
 
     .gallery-two {
-        width: 455px;
-        height: 285px;
+        width: 22%;
+        height: auto;
         margin: 10px 10px;
-        margin-left: 80px;
         border: 1px solid #e0dfda;
 
     }
 
     .gallery-three {
-        width: 543px;
-        height: 286px;
+        width: 22%;
+        height: auto;
         margin: 10px 10px;
-        margin-left: 80px;
         border: 1px solid #e0dfda;
     }
 
@@ -151,7 +147,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding-right: 985px;
+        padding-right: 125px;
         padding-top: 154px;
         border-radius: 10px;
     }
@@ -220,7 +216,7 @@
 
     }
 
-    .column3 {
+    /* .column3 {
         float: left;
         width: 24%;
         padding: 76px;
@@ -232,6 +228,19 @@
         color: black;
         padding-top: 6px;
         background-color: #dedcdc;
+    } */
+    .column3 {
+        float: left;
+        width: 22%;
+        padding: 0px;
+        height: 319px;
+        margin: 0px 13px;
+        margin-left: 12px;
+        margin-top: 65px;
+        text-align: center;
+        color: black;
+        padding-top: 0px;
+        background-color: #dedcdc;
     }
 
     .column3 img {
@@ -241,7 +250,7 @@
     .text-xl {
         font-size: 1.25rem;
         line-height: 1.75rem;
-        padding: 0px 471px;
+        padding: 0px 55px;
     }
 
     .text-4xl {
@@ -251,8 +260,8 @@
     /* slider banner show start */
     .slider {
         overflow: hidden;
-        width: 95vw;
-        height: 45vh;
+        width: 100vw;
+        height: 31vh;
         position: relative;
         margin-top: 20px;
         border-radius: 10px;
@@ -326,6 +335,36 @@
     .row {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .serviceRow {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+
+    .serviceRow h2 {
+        padding: 13px 22px;
+        margin: -7px -80px;
+    }
+
+    .teamRow {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+
+    .galleryRow {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
     ul {
@@ -403,27 +442,40 @@
         background-color: #ffffff;
     }
 
-    /*responsive*/
-    @media(max-width: 767px) {
-        .footer-col {
-            width: 50%;
-            margin-bottom: 30px;
-        }
-    }
-
-    @media(max-width: 574px) {
-        .footer-col {
-            width: 100%;
-        }
-    }
-
     /* footer end */
+
+    /* Review section Start */
+
+    .reviewContainer {
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    /* Review section End */
 
 
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
         .column {
             width: 100%;
+        }
+
+        .footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+
+        .galleryRow {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            padding: 0px 55px;
         }
     }
 </style>
@@ -446,6 +498,7 @@
                 <a href="#blog" class="ml-6 text-xs font-bold uppercase">Blog</a>
                 <a href="#team" class="ml-6 text-xs font-bold uppercase">Team</a>
                 <a href="#contact" class="ml-6 text-xs font-bold uppercase">Contact Us</a>
+                <a href="#review" class="ml-6 text-xs font-bold uppercase">Review</a>
                 <span class="ml-6 text-xs font-bold uppercase">{{auth()->user()->name}}</span>
                 <form method="POST" action="logout" class="text-xs fonr-semibold text-blue-500 ml-6">
                     @csrf
@@ -459,6 +512,7 @@
                 <a href="#blog" class="ml-6 text-xs font-bold uppercase">Blog</a>
                 <a href="#team" class="ml-6 text-xs font-bold uppercase">Team</a>
                 <a href="#contact" class="ml-6 text-xs font-bold uppercase">Contact Us</a>
+                <a href="#review" class="ml-6 text-xs font-bold uppercase">Review</a>
                 @endauth
 
                 <a href="#newsletter" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">

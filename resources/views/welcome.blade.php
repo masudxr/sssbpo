@@ -27,4 +27,8 @@
     <x-contact />
     <!-- Contact End -->
 
+    <!-- Review section Start -->
+    <x-review />
+    <!-- Review section End -->
+
 </x-layout>

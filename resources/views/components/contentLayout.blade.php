@@ -3,6 +3,7 @@
 <title>SSS</title>
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="../../css/app.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@3.10.3/dist/alpine.min.js" defer></script>
 
@@ -196,6 +197,50 @@
         border-radius: 5%;
     }
 
+    .teamRow {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    .team-one {
+        width: 325px;
+        height: 325px;
+        margin: 10px 20px;
+        margin-left: 120px;
+        text-align: center;
+    }
+
+    .team-two {
+        width: 325px;
+        height: 325px;
+        margin: 10px 20px;
+        margin-left: 80px;
+        text-align: center;
+    }
+
+    .team-three {
+        width: 325px;
+        height: 325px;
+        margin: 10px 10px;
+        margin-left: 80px;
+        text-align: center;
+    }
+
+    .team-one img {
+        border-radius: 50%;
+    }
+
+    .team-two img {
+        border-radius: 50%;
+    }
+
+    .team-three img {
+        border-radius: 50%;
+    }
+
     /* footer Start */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -299,10 +344,11 @@
     }
 
     /* footer end */
+
     .web {
         background-color: #f7f7f7;
         padding: 18px 35px;
-        height: 195px;
+        height: 257px;
         font-weight: bold;
         border-radius: 10px;
     }
@@ -407,6 +453,11 @@
         width: 12%;
         height: auto;
         margin: 19px 16px;
+    }
+
+    .mx-12 {
+        margin-left: 49rem;
+        margin-right: 49rem;
     }
 
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */

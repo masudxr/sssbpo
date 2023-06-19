@@ -1,7 +1,7 @@
 <section id="gallery">
     <h2 class="mb-4 text-3xl lg:text-4xl text-center tracking-tight font-extrabold text-gray-900 dark:text-white">Gallery</h2>
 
-    <div class="row flex">
+    <div class="galleryRow flex">
         <div class="gallery-one">
             <img src="/images/te.jpeg" alt="Team Work">
         </div>
