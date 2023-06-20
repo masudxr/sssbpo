@@ -31,4 +31,8 @@
     <x-review />
     <!-- Review section End -->
 
+    <!-- Partner Section Start -->
+    <x-partner />
+    <!-- Partner Section End -->
+
 </x-layout>

@@ -12,6 +12,15 @@
         margin: 15px 15px;
     }
 
+    /* blog 1 CSS Start */
+    .blog1 {
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+    /* blog 1 CSS End */
+
+
     html {
         scroll-behavior: smooth;
     }
@@ -205,6 +214,7 @@
         box-sizing: border-box;
         padding: 0 10px;
     }
+
     .team-one {
         width: 325px;
         height: 325px;
@@ -460,10 +470,167 @@
         margin-right: 49rem;
     }
 
+    /* property service End */
+    /* Call service Start */
+    .callCover {
+        background-image: url(/service/call-cover.png);
+        margin-bottom: 73px;
+        margin-top: 48px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        padding-top: 672px;
+    }
+
+    .serviceRow {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+
+    .serviceRow h2 {
+        padding: 13px 22px;
+        margin: -7px -80px;
+    }
+
+    .column3 {
+        float: left;
+        width: 48%;
+        padding: 0px;
+        height: 319px;
+        margin: 0px 13px;
+        margin-left: 12px;
+        margin-top: 65px;
+        text-align: center;
+        color: black;
+        padding-top: 0px;
+    }
+
+    /* Call service End */
+    
+
+
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
         .column {
             width: 100%;
+        }
+    }
+
+    /* slider call services */
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+    }
+
+    .mySlides {
+        display: none
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
         }
     }
 </style>
@@ -488,37 +655,9 @@
                 @else
                 <a href="/" class="ml-6 text-xs font-bold uppercase">Home</a>
                 @endauth
-
-                <a href="#newsletter" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
-                    Subscribe for Updates
-                </a>
             </div>
         </nav>
         {{ $slot }}
-        <footer id="newsletter" class="bg-gray-100 border border-black border-opacity-5 rounded-xl text-center py-16 px-10 mt-16">
-            <img src="./images/lary-newsletter-icon.svg" alt="" class="mx-auto -mb-6" style="width: 145px;">
-            <h5 class="text-3xl">Stay in touch with the latest Update</h5>
-            <p class="text-sm mt-3">Promise to keep the inbox clean. No bugs.</p>
-
-            <div class="mt-10">
-                <div class="relative inline-block mx-auto lg:bg-gray-200 rounded-full">
-
-                    <form method="POST" action="#" class="lg:flex text-sm">
-                        <div class="lg:py-3 lg:px-5 flex items-center">
-                            <label for="email" class="hidden lg:inline-block">
-                                <img src="/images/mailbox-icon.svg" alt="mailbox letter">
-                            </label>
-
-                            <input id="email" type="text" placeholder="Your email address" class="lg:bg-transparent py-2 lg:py-0 pl-4 focus-within:outline-none">
-                        </div>
-
-                        <button type="submit" class="transition-colors duration-300 bg-blue-500 hover:bg-blue-600 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8">
-                            Subscribe
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </footer>
         <footer class="footer">
             <div class="fo-container">
                 <div class="row">

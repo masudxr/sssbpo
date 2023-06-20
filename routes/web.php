@@ -28,10 +28,8 @@ Route::get('blog1', [BlogController::class, 'showBlog1']);
 Route::get('blog2', [BlogController::class, 'showBlog2']);
 // Blog Routes End
 
-
 // Team Members routes Start
 Route::get('teams', [BlogController::class, 'team']);
-
 
 Route::get('delete', [ContactController::class, 'delete']);  //delete request
 Route::get('dashboard', [ContactController::class, 'show']);  //Admin Dashboard
@@ -56,14 +54,3 @@ Route::get('photoGallery', [PhotoController::class, 'photos']);  // get all phot
 Route::get('payment', [ContactController::class, 'payment']);  // get all photos
 
 Route::get('review', [Controller::class, 'review']);  // get all reviews
-
-
-
-
-
-
-
-
-
-
-

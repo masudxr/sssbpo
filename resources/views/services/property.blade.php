@@ -41,7 +41,6 @@
                 </div>
             </div>
         </div>
-
     </section>
     <section class="mb-6 text-center bg-gray-100 mt-10 rounded-lg">
         <h1 class="mt-35 mb-6 text-4xl tracking-tight text-center text-green-400 dark:text-white">
@@ -56,7 +55,6 @@
         <h1 class="mt-35 mb-6 text-4xl tracking-tight text-center text-gray-900 dark:text-white">
             Largest Property Preservation Companies:
         </h1>
-        <br />
         <ul class="text-left bg-gray-200 mx-12 pt-5 pb-6 pl-6 rounded-lg text-indigo-500">
             <li>1. Spectrum Field Services</li>
             <li>2. Assurant</li>
@@ -73,11 +71,7 @@
             <li>13. National Vendor Management Services</li>
             <li>14. Servicelink </li>
         </ul>
-        <br />
-
         <img src="/images/design.webp" alt="SSS Logo" width="20%" height="16">
-        <br />
-
         <p class="mt-35 mb-6 text-xl tracking-tight text-center text-gray-900 dark:text-white">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         </p>
@@ -87,7 +81,7 @@
     </section>
     <section class="lastPart mb-6 bg-gray-100 rounded-lg">
         <h1 class="mt-35 mb-6 text-4xl tracking-tight text-center text-green-400 dark:text-white">
-            National Preservation companies that provide only or mostly REO work
+            National Preservation Companies that provide only or mostly REO Work
         </h1>
         <h3 class="mt-35 mb-6 text-2xl tracking-tight text-center text-gray-900 dark:text-white">
             Some of the smaller nationals only provide REO work, their pay may be relatively less in comparison to the larger nationals that are present. However, there are no risk and liability issues involved.
@@ -105,6 +99,5 @@
             <li>10. GTJ P&M </li>
             <li>11. Repair and Preservation Network (RPN) LLC </li>
         </ul>
-        <br />
     </section>
 </x-contentLayout>
