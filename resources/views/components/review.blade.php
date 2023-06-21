@@ -1,6 +1,6 @@
 <section id="review" class="py-6 2xl:py-6 bg-blueGray-100 rounded-t-10xl overflow-hidden">
     <div class="reviewContainer px-4 mx-auto">
-        <h1 class="mt-8 mb-14 md:mb-24 text-5xl md:text-10xl xl:text-11xl font-heading font-medium text-center leading-tight">Some Of Our Valuable Clients Reviews</h1>
+        <h1 class="mt-10 mb-14 md:mb-24 text-5xl md:text-10xl xl:text-11xl font-heading font-medium text-center leading-tight">Some Of Our Valuable Clients Reviews</h1>
         <div class="mb-2 shadow-lg rounded-t-8xl rounded-b-5xl overflow-hidden">
             <div class="pt-3 pb-3 md:pb-1 px-4 md:px-16 bg-white bg-opacity-40">
                 <div class="flex flex-wrap items-center">

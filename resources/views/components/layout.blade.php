@@ -1,5 +1,5 @@
 <!doctype html>
-<title>Alhamdulillah</title>
+<title>SMOKE IT</title>
 <!-- <meta name="viewport" content="width=device-width, initial-seale=1.0"> -->
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,7 +9,8 @@
 
 <style>
     body {
-        margin: 20px 20px;
+        border: 2px solid black;
+        background-color: #f9fafb;
     }
 
     html {
@@ -185,14 +186,17 @@
     }
 
     .team-one img {
+        border: 1px solid black;
         border-radius: 50%;
     }
 
     .team-two img {
+        border: 1px solid black;
         border-radius: 50%;
     }
 
     .team-three img {
+        border: 1px solid black;
         border-radius: 50%;
     }
 
@@ -372,7 +376,6 @@
     }
 
     .footer {
-        background-color: #f7f7f7;
         padding: 70px 0;
         margin: 0px 2px;
         border-radius: 10px;
@@ -411,10 +414,10 @@
     .footer-col ul li a {
         font-size: 16px;
         text-transform: capitalize;
-        color: #ffffff;
+        color: black;
         text-decoration: none;
         font-weight: 300;
-        color: #bbbbbb;
+        color: black;
         display: block;
         transition: all 0.3s ease;
     }
@@ -447,7 +450,6 @@
     /* Review section Start */
 
     .reviewContainer {
-        background-color: #f7f7f7;
         border-radius: 10px;
         margin-bottom: 10px;
     }
@@ -462,10 +464,10 @@
         justify-content: center;
         box-sizing: border-box;
         padding: 0 10px; */
-        background-color: #f7f7f7;
         border-radius: 10px;
         padding: 10px 10px;
     }
+
     .colm {
         float: left;
         width: 48%;
@@ -509,18 +511,22 @@
             line-height: 1.75rem;
             padding: 0px 55px;
         }
+
+        .brand h2 {
+            padding-top: 3px;
+        }
     }
 </style>
 
 <body style="font-family: Open Sans, sans-serif">
-    <section class="px-6 py-8">
+    <section class="bg-Gray-50 px-6 py-8">
         <nav class="md:flex md:justify-between md:items-center">
-            <div>
-                <a href="/">
-                    <img src="/images/images.png" alt="SSS Logo" width="20%" height="16">
+            <div class="brand flex">
+                <a href="/" class="flex items-center">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SMOKE IT</span>
                 </a>
             </div>
-
             <div class="mt-8 md:mt-0 flex items-center">
                 @auth
                 <a href="/" class="ml-6 text-xs font-bold uppercase">Home</a>
@@ -549,7 +555,7 @@
             </div>
         </nav>
         {{ $slot }}
-        <footer class="footer">
+        <footer class="footer mt-8">
             <div class="fo-container">
                 <div class="row">
                     <div class="footer-col">

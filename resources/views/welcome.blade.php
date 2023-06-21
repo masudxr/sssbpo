@@ -1,6 +1,6 @@
 <x-layout>
     <!-- Banner Section Start -->
-    <x-banner />
+    <!-- <x-banner /> -->
     <!-- Banner Section End -->
 
     <!-- Services Start -->
@@ -8,7 +8,8 @@
     <!-- services End -->
 
     <!-- About Us Start -->
-    <x-about />
+    <x-about2 />
+    <!-- <x-about /> -->
     <!-- About Us End -->
 
     <!--  Gallery Start -->

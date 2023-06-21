@@ -1,6 +1,6 @@
 <!doctype html>
 
-<title>SSS</title>
+<title>SMOKE IT</title>
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="../../css/app.css" rel="stylesheet">
@@ -9,7 +9,7 @@
 
 <style>
     body {
-        margin: 15px 15px;
+        margin: 150px 150px;
     }
 
     /* blog 1 CSS Start */
@@ -27,7 +27,6 @@
 
     .develop {
         margin: 20px 0px;
-        background-color: #f2f2f2;
         padding: 15px 15px;
         border-radius: 10px;
     }
@@ -221,6 +220,7 @@
         margin: 10px 20px;
         margin-left: 120px;
         text-align: center;
+        /* border: 1px solid black; */
     }
 
     .team-two {
@@ -241,13 +241,17 @@
 
     .team-one img {
         border-radius: 50%;
+        border: 1px solid black;
+
     }
 
     .team-two img {
+        border: 1px solid black;
         border-radius: 50%;
     }
 
     .team-three img {
+        border: 1px solid black;
         border-radius: 50%;
     }
 
@@ -269,11 +273,11 @@
     }
 
     .footer {
-        background-color: #f7f7f7;
         padding: 70px 0;
         margin: 0px 2px;
         border-radius: 10px;
         margin-top: 8px;
+        color: black;
     }
 
     .footer-col {
@@ -308,10 +312,9 @@
     .footer-col ul li a {
         font-size: 16px;
         text-transform: capitalize;
-        color: #ffffff;
         text-decoration: none;
         font-weight: 300;
-        color: #bbbbbb;
+        color: black;
         display: block;
         transition: all 0.3s ease;
     }
@@ -354,14 +357,6 @@
     }
 
     /* footer end */
-
-    .web {
-        background-color: #f7f7f7;
-        padding: 18px 35px;
-        height: 257px;
-        font-weight: bold;
-        border-radius: 10px;
-    }
 
     #gallery {
         border: #04AA6D;
@@ -511,7 +506,7 @@
     }
 
     /* Call service End */
-    
+
 
 
     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -633,27 +628,62 @@
             font-size: 11px
         }
     }
+
+    /* web Header */
+    .webHeader p {
+        padding-left: 410px;
+        padding-right: 410px;
+
+    }
+
+    .col-1 {
+        padding-left: 250px;
+        padding-top: 163px;
+        padding-right: 82px;
+    }
+
+    .col-2 img {
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+
+    .col-2 {
+        padding-right: 250px;
+        padding-top: 25px;
+
+    }
+
+    .col-1 img {
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+
+    .col-3 {
+        padding-left: 250px;
+        padding-top: 163px;
+        padding-right: 82px;
+    }
 </style>
 
 <body style="font-family: Open Sans, sans-serif">
     <section class="px-6 py-8">
         <nav class="md:flex md:justify-between md:items-center">
-            <div>
-                <a href="/">
-                    <img src="/images/images.png" alt="SSS Logo" width="20%" height="16">
+            <div class="brand flex">
+                <a href="/" class="flex items-center">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SMOKE IT</span>
                 </a>
             </div>
-
             <div class="mt-8 md:mt-0 flex items-center">
                 @auth
-                <a href="/" class="ml-6 text-xs font-bold uppercase">Home</a>
+                <a href="/" class="ml-6 text-xl font-bold uppercase">Home</a>
                 <span class="ml-6 text-xs font-bold uppercase">{{auth()->user()->name}}</span>
                 <form method="POST" action="logout" class="text-xs fonr-semibold text-blue-500 ml-6">
                     @csrf
                     <button type="submit">Log Out</button>
                 </form>
                 @else
-                <a href="/" class="ml-6 text-xs font-bold uppercase">Home</a>
+                <a href="/" class="ml-6 text-xl font-bold uppercase">Home</a>
                 @endauth
             </div>
         </nav>
