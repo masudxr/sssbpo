@@ -15,4 +15,9 @@ class Controller extends BaseController
     {
         return view('reviews');
     }
+
+    public function demo()
+    {
+        return view('partner');
+    }
 }

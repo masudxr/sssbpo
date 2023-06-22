@@ -1,17 +1,78 @@
 <x-contentLayout>
-    <section>
-        <div class="callCover">
-        </div>
-    </section>
-    <section class="mb-6">
-        <h1 class="mt-35 mb-6 text-4xl tracking-tight text-center text-green-400 dark:text-white">
+    <section class="mb-6 mt-8">
+        <h1 class="mt-35 mb-6 text-4xl tracking-tight text-center font-bold text-slate-950 dark:text-white">
             Call Center Services !
         </h1>
-        <h2 class="mt-35 mb-6 text-2xl tracking-tight text-center text-green-400 dark:text-white">
+        <h2 class="mt-35 mb-6 text-2xl tracking-tight text-center text-slate-950 dark:text-white">
             We are Offering Two Types Of Call Center Services
         </h2>
+        <section>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="/service/call-cover.png" style="width:100%">
+                    <div class="text">Inbound Service</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="/service/property.jpg" style="width:100%">
+                    <div class="text">Property Preservation Service</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="/service/community.jpg" style="width:100%">
+                    <div class="text">OutBound Service</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </section>
         <div class="row flex">
-            <div class="column3 rounded-lg bg-gray-100">
+            <div class="column3 rounded-lg">
                 <h2 class="mb-3 mt-3 font-bold uppercase text-4xl">
                     Inbound
                 </h2>
@@ -39,7 +100,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="column3 rounded-lg bg-gray-100">
+            <div class="column3 rounded-lg">
                 <h2 class="mb-3 mt-3 font-bold uppercase text-4xl">Outbound</h2>
                 <p class="mb-2">
                     In outbound call centers, dedicated agents make outgoing phone calls to potential or existing customers.
@@ -66,72 +127,5 @@
                 </ul>
             </div>
         </div>
-    </section>
-    <section>
-
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="/service/call-cover.png" style="width:100%">
-                <div class="text">Caption Text</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="/service/property.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="/service/community.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = slides.length
-                }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
-        </script>
     </section>
 </x-contentLayout>

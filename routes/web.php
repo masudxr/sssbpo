@@ -54,3 +54,10 @@ Route::get('photoGallery', [PhotoController::class, 'photos']);  // get all phot
 Route::get('payment', [ContactController::class, 'payment']);  // get all photos
 
 Route::get('review', [Controller::class, 'review']);  // get all reviews
+
+
+
+
+// demo Router
+Route::get('demo', [Controller::class, 'demo']);  // Demo router
+

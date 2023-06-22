@@ -9,7 +9,8 @@
 
 <style>
     body {
-        margin: 150px 150px;
+        background-color: rgb(231 229 228);
+        margin: 0px 259px;
     }
 
     /* blog 1 CSS Start */
@@ -175,17 +176,14 @@
 
     .design {
         color: black;
-        font-size: x-large;
-        font-weight: bold;
-        background-color: whitesmoke;
         text-align: center;
         padding: 25px 25px;
         border-radius: 10px;
     }
 
-    .design h2 {
-        color: #04AA6D;
-        font-size: xx-large;
+    .design p {
+        padding-left: 250px;
+        padding-right: 250px;
     }
 
     .galleryFirst {
@@ -399,50 +397,6 @@
         margin-left: 80px;
     }
 
-    /* Virtual Assistance Start */
-    .virtual {
-        background-image: url(/service/virtual.webp);
-        margin-bottom: 73px;
-        margin-top: 50px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-radius: 10px;
-        height: 721px;
-    }
-
-    .virtual h2 {
-        font-weight: bold;
-    }
-
-    .vir-content {
-        font-weight: bold;
-        background-color: #f2f2f2;
-        padding: 18px 18px;
-        font-size: 18px;
-        border-radius: 10px;
-    }
-
-    .vir {
-        padding-left: 85px;
-        background-color: #f2f2f2;
-        border-radius: 10px;
-    }
-
-    .vir img {
-        width: 250px;
-        height: 242px;
-        border-radius: 10px;
-    }
-
-    .virtu {
-        text-align: center;
-        margin: 15px 31px;
-    }
-
-    /* Virtual Assistance End */
-
-    /* property service Start */
     .propertyCover {
         background-image: url(/service/property.jpg);
         margin-bottom: 73px;
@@ -450,14 +404,20 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        border-radius: 10px;
         padding-top: 629px;
     }
 
+    .property {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
     .property-one {
-        width: 12%;
-        height: auto;
+        width: 26%;
+        height: max-content;
         margin: 19px 16px;
+        border: 1px solid black;
     }
 
     .mx-12 {
@@ -495,14 +455,16 @@
     .column3 {
         float: left;
         width: 48%;
-        padding: 0px;
-        height: 319px;
-        margin: 0px 13px;
-        margin-left: 12px;
+        padding: 7px 7px;
+        height: 350px;
+        margin: 0px 8px;
+        margin-left: 18px;
         margin-top: 65px;
         text-align: center;
         color: black;
         padding-top: 0px;
+        border: 1px solid whitesmoke;
+        filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
     }
 
     /* Call service End */
@@ -663,11 +625,120 @@
         padding-top: 163px;
         padding-right: 82px;
     }
+
+    /* virtual start*/
+    .virtual {
+        background-image: url(/service/virtual.webp);
+        margin-bottom: 73px;
+        margin-top: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        height: 721px;
+    }
+
+    .virtual h2 {
+        font-weight: bold;
+    }
+
+    .vir-content {
+        padding: 18px 18px;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    .vir {
+        border-radius: 10px;
+    }
+
+    .vir img {
+        width: 250px;
+        height: 242px;
+        border-radius: 10px;
+    }
+
+    .virtu {
+        text-align: center;
+        margin: 15px 31px;
+    }
+
+    .virtual-Main {
+        display: flex;
+        margin-right: 261px;
+        margin-left: 256px;
+    }
+
+    .virtual-Main .child {
+        border: 1px solid whitesmoke;
+        padding: 37px 19px;
+        margin: 10px 10px;
+        filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+
+    }
+
+    .vHeader {
+        margin-bottom: 15px;
+        padding: 0px 256px;
+    }
+
+    .main {
+        background-color: #f9fafb;
+        margin: 0px 259px;
+    }
+
+    .mother {
+        padding-left: 310px;
+        padding-right: 125px;
+    }
+
+    .baby {
+        border: 1px solid whitesmoke;
+        padding: 37px 98px;
+        margin: 10px 10px;
+        filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+    }
+
+    /* Virtual End */
+    /* property service Start */
+
+    .pfather {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+    }
+
+    .pbaby {
+        border: 1px solid whitesmoke;
+        filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+        padding: 20px 20px;
+    }
+
+    .pbaby li {
+        color: black;
+    }
+
+    .lastPart {
+        margin: 10px 10px;
+    }
+
+    .lastPart h3 {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+
+    .update h2 {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+
+    /* property service End */
 </style>
 
 <body style="font-family: Open Sans, sans-serif">
-    <section class="px-6 py-8">
-        <nav class="md:flex md:justify-between md:items-center">
+    <section class="main">
+        <nav class="md:flex md:justify-between md:items-center px-6 py-8">
             <div class="brand flex">
                 <a href="/" class="flex items-center">
                     <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />

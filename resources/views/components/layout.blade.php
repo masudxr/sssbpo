@@ -9,7 +9,11 @@
 
 <style>
     body {
-        border: 2px solid black;
+        background-color: rgb(231 229 228);
+        margin: 0px 259px;
+    }
+
+    .main {
         background-color: #f9fafb;
     }
 
@@ -207,32 +211,13 @@
 
     /* service */
     .service {
-        background-image: url(/images/service.jpg);
         margin-bottom: 73px;
         margin-top: 50px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         color: white;
-        border-radius: 10px;
-        margin-right: 6px;
-        margin-left: 7px;
+        background-color: blue;
 
     }
 
-    /* .column3 {
-        float: left;
-        width: 24%;
-        padding: 76px;
-        height: 325px;
-        margin: 0px 6px;
-        margin-left: 12px;
-        margin-top: 90px;
-        text-align: center;
-        color: black;
-        padding-top: 6px;
-        background-color: #dedcdc;
-    } */
     .column3 {
         float: left;
         width: 22%;
@@ -244,7 +229,8 @@
         text-align: center;
         color: black;
         padding-top: 0px;
-        background-color: #dedcdc;
+        background-color: #f9fafb;
+        filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
     }
 
     .column3 img {
@@ -516,11 +502,25 @@
             padding-top: 3px;
         }
     }
+
+    .main-logo {
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo img {
+        border: 1px solid black;
+        border-radius: 11%;
+    }
 </style>
 
 <body style="font-family: Open Sans, sans-serif">
-    <section class="bg-Gray-50 px-6 py-8">
-        <nav class="md:flex md:justify-between md:items-center">
+    <section class="main">
+        <nav class="md:flex md:justify-between md:items-center px-6 py-8">
             <div class="brand flex">
                 <a href="/" class="flex items-center">
                     <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />

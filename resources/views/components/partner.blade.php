@@ -5,31 +5,24 @@
             We did a greate job with these companies. You can be next to work with !
         </p>
     </div>
-    <section class="flex">
-        <div>
-            <img src="/logo/asl.png" alt="partner">
+    <section class="main-logo flex">
+        <div class="logo">
+            <img src="/logo/building.jpg" alt="partner">
         </div>
-        <div>
+        <div class="logo">
             <img src="/logo/Facebook.png" alt="partner">
         </div>
-        <div>
-            <img src="/logo/google.webp" alt="partner">
+        <div class="logo">
+            <img src="/logo/evergreen.png" alt="partner">
         </div>
-        <div>
-            <img src="/logo/link.png" alt="partner">
+        <div class="logo">
+            <img src="/logo/idea.webp" alt="partner">
         </div>
-        <div>
-            <img src="/logo/asl.png" alt="partner">
-        </div>
-        <div>
+        <div class="logo">
             <img src="/logo/Facebook.png" alt="partner">
         </div>
-        <div>
-            <img src="/logo/link.png" alt="partner">
-        </div>
-        <div>
-            <img src="/logo/google.webp" alt="partner">
+        <div class="logo">
+            <img src="/logo/evergreen.png" alt="partner">
         </div>
     </section>
-
 </section>
