@@ -214,7 +214,7 @@
         margin-bottom: 73px;
         margin-top: 50px;
         color: white;
-        background-color: blue;
+        /* background-color: blue; */
 
     }
 
@@ -222,10 +222,9 @@
         float: left;
         width: 22%;
         padding: 0px;
-        height: 319px;
         margin: 0px 13px;
         margin-left: 12px;
-        margin-top: 65px;
+        margin-top: 17px;
         text-align: center;
         color: black;
         padding-top: 0px;
@@ -244,7 +243,7 @@
     }
 
     .text-4xl {
-        color: whitesmoke;
+        color: black;
     }
 
     /* slider banner show start */
@@ -529,7 +528,6 @@
             </div>
             <div class="mt-8 md:mt-0 flex items-center">
                 @auth
-                <a href="/" class="ml-6 text-xs font-bold uppercase">Home</a>
                 <a href="#services" class="ml-6 text-xs font-bold uppercase">Services</a>
                 <a href="#about" class="ml-6 text-xs font-bold uppercase">About Us</a>
                 <a href="#gallery" class="ml-6 text-xs font-bold uppercase">Gallery</a>
@@ -543,7 +541,6 @@
                     <button type="submit">Log Out</button>
                 </form>
                 @else
-                <a href="#home" class="ml-6 text-xs font-bold uppercase">Home</a>
                 <a href="#services" class="ml-6 text-xs font-bold uppercase">Services</a>
                 <a href="#about" class="ml-6 text-xs font-bold uppercase">About Us</a>
                 <a href="#gallery" class="ml-6 text-xs font-bold uppercase">Gallery</a>

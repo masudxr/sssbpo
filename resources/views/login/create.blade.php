@@ -1,13 +1,12 @@
 <x-layout>
-    <h2>
+    <h2 class="ml-8">
         Welcome, Registation Here !
     </h2>
     <section class="px-6 py-8">
         <main class="max-w-lg max-auto mt-10 bg-gray-100 border border-gray-200 p-6 rounded-xl">
-            <h1 class="text-center font-bond text-sl">Donor Registation!</h1>
+            <h1 class="text-center font-bond text-sl">New User Registration !</h1>
             <form method="POST" action="/register" class="mt-10">
                 @csrf
-
                 <div class="mb-6">
                     <label class="block mb-2 uppercase font-blod text-xs text-gray-700" for="name">
                         Name
@@ -52,6 +51,24 @@
                     </label>
                     <input class="border border-gray-400 p-2 w-full" type="text" name="phone" id="phone" value="{{old('phone')}}" required>
                     @error('phone')
+                    <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+                    @enderror
+                </div>
+                <div class="mb-6">
+                    <label class="block mb-2 uppercase font-blod text-xs text-gray-700" for="position">
+                        Member Position
+                    </label>
+                    <input class="border border-gray-400 p-2 w-full" type="text" name="position" id="position" value="{{old('position')}}" required>
+                    @error('position')
+                    <p class="text-red-500 text-xs mt-1">{{$message}}</p>
+                    @enderror
+                </div>
+                <div class="mb-6">
+                    <label class="block mb-2 uppercase font-blod text-xs text-gray-700" for="date">
+                        Joining Date
+                    </label>
+                    <input class="border border-gray-400 p-2 w-full" type="date" name="date" id="date" value="{{old('date')}}" required>
+                    @error('date')
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
                     @enderror
                 </div>

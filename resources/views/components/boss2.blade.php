@@ -1,7 +1,6 @@
 <div class="leader flex">
     <div class="content">
         <img src="/images/masud.jpeg" alt="CFO">
-
         <h4 class="mt-3">
             Masud Rana
         </h4>
@@ -32,7 +31,6 @@
     </div>
     <div class="content ml-10">
         <img src="/images/zubayer .jpg" alt="CFO">
-
         <h4 class="mt-3">
             Zubayer Al Mahmud
         </h4>

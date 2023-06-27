@@ -1,7 +1,6 @@
 <div class="co-leader flex">
     <div class="content ml-10">
         <img src="/images/zubayer .jpg" alt="CFO">
-
         <h4 class="mt-3">
             Zubayer Al Mahmud
         </h4>
@@ -17,7 +16,6 @@
     </div>
     <div class="content">
         <img src="/images/juli.jpeg" alt="CFO">
-
         <h4 class="mt-3">
             Juli Jahan Tondra
         </h4>
@@ -33,7 +31,6 @@
     </div>
     <div class="content">
         <img src="/images/rasel.jpg" alt="CFO">
-
         <h4 class="mt-3">
             Mahedi Hasan Rasel
         </h4>
@@ -49,7 +46,6 @@
     </div>
     <div class="content">
         <img src="/images/methu.jpg" alt="CFO">
-
         <h4 class="mt-3">
             Mahidul Islam
         </h4>
@@ -65,7 +61,6 @@
     </div>
     <div class="content ml-10">
         <img src="/images/roy.jpeg" alt="Lead">
-
         <h4 class="mt-3">
             Anqur Roy
         </h4>
@@ -79,5 +74,4 @@
             +8801753010730
         </p>
     </div>
-
 </div>

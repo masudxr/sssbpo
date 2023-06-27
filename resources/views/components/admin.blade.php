@@ -1,12 +1,26 @@
 <!doctype html>
 
-<title>SSS Admin Panel</title>
+<title>ADMIN SMOKE IT</title>
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link href="./css/vendors/flatpickr.min.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@3.10.3/dist/alpine.min.js" defer></script>
+<script>
+    if (localStorage.getItem('dark-mode') === 'false' || !('dark-mode' in localStorage)) {
+        document.querySelector('html').classList.remove('dark');
+        document.querySelector('html').style.colorScheme = 'light';
+    } else {
+        document.querySelector('html').classList.add('dark');
+        document.querySelector('html').style.colorScheme = 'dark';
+    }
+</script>
 
 <style>
+    .main {
+        background-color: #f9fafb;
+    }
+
     html {
         scroll-behavior: smooth;
     }
@@ -29,12 +43,8 @@
 
     #customers td,
     #customers th {
-        border: 1px solid #ddd;
+        /* border: 1px solid #ddd; */
         padding: 8px;
-    }
-
-    #customers tr:nth-child(even) {
-        background-color: #f2f2f2;
     }
 
     #customers tr:hover {
@@ -59,6 +69,16 @@
         width: 25%;
         padding: 10px;
         height: 300px;
+        /* Should be removed. Only for demonstration */
+    }
+
+    .media {
+        float: left;
+        width: 33.33%;
+        padding: 7px;
+        height: 300px;
+        border: 1px solid #e0dfda;
+        /* margin: 1px; */
         /* Should be removed. Only for demonstration */
     }
 
@@ -87,6 +107,10 @@
         border: 1px solid black;
         padding: 25px;
 
+    }
+
+    .container h2 {
+        color: black;
     }
 
     /* footer Start */
@@ -177,6 +201,99 @@
         background-color: #ffffff;
     }
 
+    #gallery {
+        border: #04AA6D;
+    }
+
+    .gallery-one {
+        width: 22%;
+        height: auto;
+        margin: 10px 10px;
+        border: 1px solid #e0dfda;
+    }
+
+    .gallery-two {
+        width: 22%;
+        height: auto;
+        margin: 10px 10px;
+        border: 1px solid #e0dfda;
+
+    }
+
+    .gallery-three {
+        width: 22%;
+        height: auto;
+        margin: 10px 10px;
+        border: 1px solid #e0dfda;
+    }
+
+    .about {
+        text-align: center;
+        width: 100%;
+        padding: 10px 10px;
+        background-image: url(/images/contact.jpg);
+        background-color: #cccccc;
+        margin-bottom: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-right: 125px;
+        padding-top: 154px;
+        border-radius: 10px;
+    }
+
+    .about p {
+        color: whitesmoke;
+    }
+
+    .teamrow {
+        border: 3px solid blue;
+    }
+
+    .team-one {
+        width: 325px;
+        height: 325px;
+        margin: 10px 20px;
+        margin-left: 120px;
+        text-align: center;
+    }
+
+    .team-two {
+        width: 325px;
+        height: 325px;
+        margin: 10px 20px;
+        margin-left: 80px;
+        text-align: center;
+    }
+
+    .team-three {
+        width: 325px;
+        height: 325px;
+        margin: 10px 10px;
+        margin-left: 80px;
+        text-align: center;
+    }
+
+    .team-one img {
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    .team-two img {
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    .team-three img {
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    .morebutton {
+        margin-top: 180px;
+        margin-left: 20px;
+    }
+
     /*responsive*/
     @media(max-width: 767px) {
         .footer-col {
@@ -204,16 +321,10 @@
 <body style="font-family: Open Sans, sans-serif">
     <section class="px-6 py-8">
         <nav class="md:flex md:justify-between md:items-center">
-            <div>
-                <a href="/dashboard">
-                    <img src="/images/images.png" alt="SSS Logo" width="20%" height="16">
-                </a>
-            </div>
-
             <div class="mt-8 md:mt-0 flex items-center">
                 @auth
-                <a href="dashboard/team" class="ml-6 text-xs font-bold uppercase">Add New Member</a>
-                <a href="dashboard/index" class="ml-6 text-xs font-bold uppercase">All Members</a>
+                <!-- <a href="dashboard/team" class="ml-6 text-xs font-bold uppercase">Add New Member</a>
+                <a href="dashboard/index" class="ml-6 text-xs font-bold uppercase">All Members</a> -->
                 <!-- <a href="#about" class="ml-6 text-xs font-bold uppercase"></a> -->
                 <span class="ml-6 text-xs font-bold uppercase">{{auth()->user()->name}}</span>
                 <form method="POST" action="logout" class="text-xs fonr-semibold text-blue-500 ml-6">
@@ -221,8 +332,6 @@
                     <button type="submit">Log Out</button>
                 </form>
                 @else
-                <a href="dashboard/team" class="ml-6 text-xs font-bold uppercase">Add New Member</a>
-                <a href="dashboard/index" class="ml-6 text-xs font-bold uppercase">All Members</a>
                 <!-- <a href="#about" class="ml-6 text-xs font-bold uppercase">About Us</a> -->
                 @endauth
             </div>

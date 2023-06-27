@@ -1,6 +1,5 @@
 <div class="boss">
     <img src="/images/shihab.png" alt="CFO">
-
     <div>
         <h4 class="mt-3">
             Shihab Mridha

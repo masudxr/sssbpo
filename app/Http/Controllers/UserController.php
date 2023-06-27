@@ -14,20 +14,22 @@ class UserController extends Controller
 
     public function store()
     {
-        // $done = request()->input();
-        // ddd($done);
+        $done = request()->input();
+        ddd($done);
         $attribute = request()->validate([
             'name' => 'required',
             'password' => 'required',
             'email' => 'required|email|max:255',
             'phone' => 'required',
             'address' => 'required',
+            'position' => 'required',
+            'join_date' => 'required'
         ]);
 
         // dd($attribute);
-        User::create($attribute);
+        // User::create($attribute);
         // // ddd($contact);
         // 
-        return redirect('dashboard');
+        // return redirect('dashboard');
     }
 }

@@ -18,7 +18,7 @@ class ContactController extends Controller
         // $done = request()->all();
         // dd($done);
         $attribute = request()->validate([
-            'name' => 'required|min:6|max:255',
+            'name' => 'required|max:255',
             'email' => 'required|email|max:255',
             'subject' => 'required|min:10|max:255',
             'body' => 'required',
@@ -32,7 +32,7 @@ class ContactController extends Controller
 
     public function show()
     {
-        return view('admin.dashboard', [
+        return view('admin.inbox', [
             'contacts' => Contact::all()
         ]);
     }

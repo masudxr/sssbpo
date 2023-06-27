@@ -18,6 +18,6 @@ class Controller extends BaseController
 
     public function demo()
     {
-        return view('partner');
+        return view('admin.dash');
     }
 }

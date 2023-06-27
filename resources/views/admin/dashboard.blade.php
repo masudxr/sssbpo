@@ -26,5 +26,4 @@
 
         </table>
     </section>
-
 </x-admin>

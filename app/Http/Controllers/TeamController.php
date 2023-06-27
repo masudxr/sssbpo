@@ -22,13 +22,15 @@ class TeamController extends Controller
             'email' => 'required|email|max:255',
             'phone' => 'required',
             'address' => 'required',
+            'salary' => 'required',
+            'join_date' => 'required'
         ]);
 
         // dd($attribute);
         Team::create($attribute);
         // // ddd($contact);
         // 
-        return redirect('dashboard');
+        return redirect('/dashboard');
     }
     public function members()
     {
@@ -52,7 +54,6 @@ class TeamController extends Controller
         // ddd($list);
 
         $updateUser = Team::find($list['id']);
-
         $updateUser->name = request()->input('name');
         $updateUser->email = request()->input('email');
         $updateUser->title = request()->input('title');
@@ -62,12 +63,17 @@ class TeamController extends Controller
         return redirect('dashboard');
     }
 
-
     public function Delete()
     {
         $list = request()->input();
         $deleteUser = Team::find($list['id']);
         $deleteUser->delete();
-        return redirect('dashboard');
+        return redirect('inbox');
+    }
+    public function home()
+    {
+        return view('admin.dash', [
+            'members' => Team::all()
+        ]);
     }
 }

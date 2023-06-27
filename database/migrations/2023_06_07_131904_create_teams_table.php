@@ -20,6 +20,8 @@ class CreateTeamsTable extends Migration
             $table->string('email')->unique();
             $table->string('phone');
             $table->string('address');
+            $table->string('salary');
+            $table->string('join_date')->timestamps();
             $table->timestamps();
         });
     }

@@ -5,7 +5,7 @@
     </section>
     <section class="mt-10 mb-6">
         <div class="design">
-            <h2 class="mt-35 mb-6 text-4xl tracking-tight text-center text-gray-900 dark:text-white">
+            <h2 class="mt-35 mb-6 text-4xl font-bold tracking-tight text-center text-gray-900 dark:text-white">
                 Our Services !!
             </h2>
             <h4 class="mb-5 text-2xl">

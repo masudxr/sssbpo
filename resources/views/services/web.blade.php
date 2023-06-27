@@ -1,16 +1,17 @@
 <x-contentLayout>
-    <section class="webHeader mb-8">
-        <h2 class="mb-3 text-center font-bold text-2xl text-indigo-500 font-sans">
+    <section class="webHeader mb-2">
+        <h2 class="mb-3 text-center font-bold text-4xl font-sans">
             What Is Web Development?
         </h2>
         <p class="text-center mb-8">
             Website development is definitely about building webs. Basically, it includes all activities from registering domain names, hosting servers and email hosting to storage and routing. Developers then will build security layers to protect the confidential or private information of customers and your company from cyber-theft. Also, after your idea is carefully discussed, an engineering team will draw up plans and strategy of web building and finally execute it. This is a necessary steps of creating webs.
         </p>
-        <h1 class="mb-3 text-center font-bold text-2xl">
-            Our Services !
+        <h1 class="mb-5 text-center font-bold text-4xl">
+            Our Web Features and Services !
         </h1>
-        <div class="webContainer flex">
+        <div class="webContainer">
             <div class="col-1">
+                <img src="/service/web.jpg" alt="Team Work">
                 <h1 class="mb-3 text-2xl font-bold">
                     Web Development !
                 </h1>
@@ -21,16 +22,8 @@
                     </a>
                 </Button>
             </div>
-            <div class="col-2">
-                <img src="/service/web.jpg" alt="Team Work">
-            </div>
-        </div>
-        <div class="webContainer flex">
             <div class="col-1">
                 <img src="/service/web.jpg" alt="Team Work">
-
-            </div>
-            <div class="col-3">
                 <h1 class="mb-3 text-2xl font-bold">
                     Full-stack development
                 </h1>
@@ -41,9 +34,8 @@
                     </a>
                 </Button>
             </div>
-        </div>
-        <div class="webContainer flex">
             <div class="col-1">
+                <img src="/service/web.jpg" alt="Team Work">
                 <h1 class="mb-3 text-2xl font-bold">
                     E-commerce development
                 </h1>
@@ -54,16 +46,8 @@
                     </a>
                 </Button>
             </div>
-            <div class="col-2">
-                <img src="/service/web.jpg" alt="Team Work">
-            </div>
-        </div>
-        <div class="webContainer flex">
             <div class="col-1">
                 <img src="/service/web.jpg" alt="Team Work">
-
-            </div>
-            <div class="col-3">
                 <h1 class="mb-3 text-2xl font-bold">
                     PHP development
                 </h1>
@@ -74,9 +58,8 @@
                     </a>
                 </Button>
             </div>
-        </div>
-        <div class="webContainer flex">
             <div class="col-1">
+                <img src="/service/web.jpg" alt="Team Work">
                 <h1 class="mb-3 text-2xl font-bold">
                     Back-End development
                 </h1>
@@ -87,16 +70,8 @@
                     </a>
                 </Button>
             </div>
-            <div class="col-2">
-                <img src="/service/web.jpg" alt="Team Work">
-            </div>
-        </div>
-        <div class="webContainer flex">
             <div class="col-1">
                 <img src="/service/web.jpg" alt="Team Work">
-
-            </div>
-            <div class="col-3">
                 <h1 class="mb-3 text-2xl font-bold">
                     Front-End development
                 </h1>
@@ -109,7 +84,7 @@
             </div>
         </div>
     </section>
-    <section class="teamRow flex mb-10">
+    <section class="teamRow flex mb-10 mt-2">
         <div class="mb-10 mt-10">
             <h2 class="mb-4 text-3xl lg:text-4xl text-center tracking-tight font-extrabold text-gray-900 dark:text-white">Our Senior Developers !!</h2>
             <div class="teamRow flex">

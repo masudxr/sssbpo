@@ -14,6 +14,8 @@ class Team extends Model
         'email',
         'title',
         'phone',
-        'address'
+        'address',
+        'salary',
+        'join_date'
     ];
 }

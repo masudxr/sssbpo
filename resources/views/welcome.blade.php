@@ -1,8 +1,4 @@
 <x-layout>
-    <!-- Banner Section Start -->
-    <!-- <x-banner /> -->
-    <!-- Banner Section End -->
-
     <!-- Services Start -->
     <x-services />
     <!-- services End -->
@@ -28,12 +24,11 @@
     <x-contact />
     <!-- Contact End -->
 
-    <!-- Review section Start -->
-    <x-review />
-    <!-- Review section End -->
-
     <!-- Partner Section Start -->
     <x-partner />
     <!-- Partner Section End -->
 
+    <!-- Review section Start -->
+    <x-review />
+    <!-- Review section End -->
 </x-layout>
