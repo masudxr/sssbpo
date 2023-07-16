@@ -9,7 +9,6 @@ use App\Http\Controllers\TeamController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-// Routes
 Route::get('/', [ContactController::class, 'index']);  //Show home Page
 
 Route::post('/', [ContactController::class, 'store']);  //Contact request

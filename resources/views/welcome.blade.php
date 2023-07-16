@@ -5,7 +5,6 @@
 
     <!-- About Us Start -->
     <x-about2 />
-    <!-- <x-about /> -->
     <!-- About Us End -->
 
     <!--  Gallery Start -->
